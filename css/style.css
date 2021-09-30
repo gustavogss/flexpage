@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --laranja: #F68D4C;
+    --azul: #122A57;
+    --branco: #ffffff;
+}
+
+body {
+    background-color: var(--branco);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: var(--azul);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 62rem;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    background-color: #122A57;
+    height: 5rem;
+    display: flex;
+    color: var(--branco);
+    box-shadow: 0rem 0.05rem 0rem 0rem rgb(25, 25, 59);
+}
+
+header .list-items {
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu {
+    justify-content: space-between;
+    align-items: center;
+}
+
+section,
+div img {
+    display: block;
+    width: 100%;
+}
+
+.list-items li a {
+    color: var(--branco);
+}
+
+.list-items li a:hover {
+    color: var(--laranja);
+    transition: 0.2s;
+}
+
+.apresentacao {
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao .texto-apresentacao {
+    min-height: 12.5rem;
+}
+
+.texto-apresentacao h1 {
+    color: var(--azul);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    border-radius: 2rem;
+    padding: 0.5rem 0.1rem;
+    width: 13rem;
+    display: block;
+    margin-top: 0.5rem;
+    height: 3rem;
+    line-height: 2rem;
+}
+
+.texto-apresentacao a:hover {
+    background-color: var(--laranja);
+    color: var(--azul);
+    border: 0.10rem solid var(--azul);
+    transition: 0.2s;
+}
+
+#quem-somos {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quem-somos h2 {
+    font-size: 2rem;
+    color: var(--azul);
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+#quem-somos h2::before {
+    content: '';
+    height: 3rem;
+    width: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: var(--azul);
+    position: relative;
+}
+
+#quem-somos p {
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+#quem-somos img {
+    min-width: 420px;
+}
+
+.container-externo {
+    background-color: var(--azul);
+    width: 100%;
+}
+
+#servicos {
+    flex-direction: column;
+    padding: 3rem;
+}
+
+#servicos h2 {
+    color: var(--branco);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.list-servicos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-servicos .item-servico {
+    text-align: center;
+}
+
+.item-servico p {
+    color: var(--branco);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.item-servico a {
+    width: 8rem;
+    background-color: var(--branco);
+    border-radius: 2rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--azul);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.item-servico a:hover {
+    background-color: var(--laranja);
+}
+
+.item-servico img {
+    width: 80%;
+    margin: auto;
+}
+
+#planos {
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+#planos h2 {
+    font-size: 2.2rem;
+    color: var(--azul);
+    display: flex;
+    margin: 1rem;
+}
+
+.list-planos {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1.2rem;
+}
+
+.item-plano {
+    flex: 1;
+    border: 0.2rem solid var(--azul);
+    border-radius: 0.3rem;
+    margin-right: 1.5rem;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 320px;
+}
+
+.item-plano .btn {
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.item-plano .btn:hover {
+    background-color: var(--laranja);
+    color: var(--azul);
+    border: 0.10rem solid var(--azul);
+    transition: 0.2s;
+}
+
+.item-plano h3 {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item-plano h3::after {
+    content: '';
+    background-color: var(--azul);
+    width: 80%;
+    height: 0.25rem;
+    margin: 2rem;
+}
+
+.item-plano ul {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-plano ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-plano ul li::before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--azul);
+    margin-right: 0.5rem;
+}
+
+footer {
+    background-color: var(--azul);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer {
+    justify-content: space-between;
+    color: white;
+}
+
+a span {
+    color: white;
+    font-weight: 600;
+}
+
+a:hover span {
+    color: var(--laranja);
+}
