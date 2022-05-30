@@ -8,6 +8,6 @@
 - Flexbox
 - Javascript
 
-## Deploy 🏃
+## Deploy 🔌
 
 https://gustavogss.github.io/flexpage/
