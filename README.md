@@ -11,3 +11,5 @@
 ## Deploy 🔌
 
 [Clique aqui](https://gustavogss.github.io/flexpage/)
+
+<img src="https://github.com/gustavogss/flexpage/blob/main/images/page.png" />
