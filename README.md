@@ -8,7 +8,7 @@
 - Flexbox
 - Javascript
 
-## Deploy 🔌
+## Como usar 🖥️
 
 [Clique aqui](https://gustavogss.github.io/flexpage/)
 
